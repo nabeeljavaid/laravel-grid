@@ -1,0 +1,331 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+	font-display: block;
+	font-family: "Glyphicons Halflings";
+	src: url("./fonts/glyphicons-halflings-regular.woff2") format("woff2"),
+url("./fonts/glyphicons-halflings-regular.woff") format("woff");
+}
+.laravel-grid
+{
+
+	position:relative;
+	margin-bottom:10px;
+}
+/*
+|--------------------------------------------------------------------------
+| Header
+|--------------------------------------------------------------------------
+*/
+.laravel-grid-header h1
+{
+	font-size:24px;
+	font-weight:bold;
+	text-align:center;
+}
+.laravel-grid-actions
+{
+	float:right;
+	margin-bottom:5px;
+}
+.laravel-grid-search
+{
+	clear:both;
+	margin:10px 0px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Body
+|--------------------------------------------------------------------------
+*/
+.laravel-grid-body
+{
+    margin-top:20px;
+}
+
+.laravel-grid-table
+{
+}
+
+.laravel-grid-table thead
+{
+}
+.laravel-grid-table thead tr th
+{
+
+	line-height:36px;
+	text-align:center;
+	font-size:12px;
+
+}
+.laravel-grid-table thead tr th a
+{
+        display:block;
+}
+.laravel-grid-table thead tr th a:hover,
+.laravel-grid-table thead tr th a.laravel-grid-sort-link--asc,
+.laravel-grid-table thead tr th a.laravel-grid-sort-link--desc:hover
+{
+
+}
+.laravel-grid-table thead tr th a.laravel-grid-sort-link--desc,
+.laravel-grid-table thead tr th a.laravel-grid-sort-link--asc:hover
+{
+
+}
+.laravel-grid-table tbody
+{
+}
+.laravel-grid-table tbody tr.laravel-grid-row--odd
+{
+	background-color:#FCFCFC;
+}
+.laravel-grid-table tbody tr.laravel-grid-row--even
+{
+	background-color:#FFFFFF;
+}
+.laravel-grid-table tbody tr.laravel-grid-row--odd:hover,
+.laravel-grid-table tbody tr.laravel-grid-row--even:hover
+{
+	background-color:#FFFFCC;
+}
+.laravel-grid-table tbody tr.laravel-grid-row--selected
+{
+	background-color:#E0ECF8;
+}
+
+.laravel-grid-table tr td
+{
+	padding:5px 8px;
+	line-height:25px;
+        /*overflow: hidden; text-overflow: ellipsis;
+        max-width: 100px;*/
+        /*word-break:break-all;*/
+}
+.laravel-grid-table tr td input[type=text],
+.laravel-grid-table tr td input[type=password],
+.laravel-grid-table tr td textarea,
+.laravel-grid-table tr td select
+{
+	width:auto;
+	border:1px solid #CCCCCC;
+	padding:4px;
+	-moz-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	border-radius: 4px;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Footer
+|--------------------------------------------------------------------------
+*/
+.laravel-grid-footer
+{
+    min-height:50px;
+    margin-top: 20px;
+}
+
+.laravel-grid-pagination
+{
+	margin:5px auto;
+	padding:0;
+	height:100%;
+	overflow:hidden;
+	text-align:center;
+}
+.laravel-grid-pagination ul
+{
+	margin:0;
+	padding:0;
+}
+.laravel-grid-pagination ul li
+{
+	float:left;
+	list-style:none;
+        height:45px;
+        margin-left: 10px;
+}
+.laravel-grid-pagination a,
+.laravel-grid-pagination span
+{
+	display:inline-block;
+	font-size:14px;
+	font-weight:bold;
+	line-height:45px;
+	height:45px;
+	margin:0 2px;
+	color:#949494;
+	text-decoration:none;
+	outline:none;
+
+}
+.laravel-grid-pagination a:hover
+{
+	color:#1E75BC;
+}
+.laravel-grid-pagination i
+{
+}
+.laravel-grid-pagination a:hover,
+.laravel-grid-pagination i:hover
+{
+	cursor:pointer;
+}
+.laravel-grid-pagination span.glyphicon{
+    display:none;
+}
+.laravel-grid-pagination input#laravel-grid-page,
+.laravel-grid-pagination select#laravel-grid-page
+{
+	width:60px;
+}
+
+
+.laravel-grid-records-per-page
+{
+	float:right;
+	margin-top:5px;
+	line-height:20px;
+	height:20px;
+}
+.laravel-grid-records-per-page a,
+.laravel-grid-records-per-page span
+{
+	display:block;
+	font-size:14px;
+	font-weight:bold;
+	line-height:20px;
+	height:20px;
+	margin:0 2px;
+	color:#949494;
+	text-decoration:none;
+	display:inline-block;
+
+	background-repeat:no-repeat;
+	background-position:center ;
+	outline:none;
+
+}
+.laravel-grid-records-per-page a:hover
+{
+    color:#1E75BC;
+}
+.laravel-grid-records-per-page span
+{
+    color:#1E75BC;
+}
+.laravel-grid-records-per-page input#laravel-grid-limit,
+.laravel-grid-records-per-page select#laravel-grid-limit
+{
+	width:auto;
+	min-width:60px;
+        display: inline-block;
+
+}
+.laravel-grid-info
+{
+	float:left;
+	margin-top:5px;
+	line-height:40px;
+	height:40px;
+	font-style:italic;
+}
+
+/*
+|--------------------------------------------------------------------------
+| Table
+|--------------------------------------------------------------------------
+*/
+.laravel-grid-table {
+    clear: both;
+    margin-top: 6px !important;
+    margin-bottom: 6px !important;
+    max-width: none !important
+}
+.laravel-grid-table td,
+.laravel-grid-table th {
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box
+}
+.laravel-grid-table thead>tr>th.laravel-grid-sort--asc,
+.laravel-grid-table thead>tr>th.laravel-grid-sort--desc,
+.laravel-grid-table thead>tr>th.laravel-grid-sort,
+.laravel-grid-table thead>tr>td.laravel-grid-sort--asc,
+.laravel-grid-table thead>tr>td.laravel-grid-sort--desc,
+.laravel-grid-table thead>tr>td.laravel-grid-sort {
+    padding-right: 30px
+}
+.laravel-grid-table thead>tr>th:active,
+.laravel-grid-table thead>tr>td:active {
+    outline: none
+}
+.laravel-grid-table thead .laravel-grid-sort,
+.laravel-grid-table thead .laravel-grid-sort--asc,
+.laravel-grid-table thead .laravel-grid-sort--desc,
+.laravel-grid-table thead .laravel-grid-sort--asc-disabled,
+.laravel-grid-table thead .laravel-grid-sort--desc-disabled {
+    cursor: pointer;
+    position: relative
+}
+.laravel-grid-table thead .laravel-grid-sort:after,
+.laravel-grid-table thead .laravel-grid-sort--asc:after,
+.laravel-grid-table thead .laravel-grid-sort--desc:after,
+.laravel-grid-table thead .laravel-grid-sort--asc-disabled:after,
+.laravel-grid-table thead .laravel-grid-sort--desc-disabled:after {
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+    display: block;
+    font-family: 'Glyphicons Halflings';
+    opacity: 0.8;
+}
+.laravel-grid-table thead .laravel-grid-sort:after {
+    opacity: 0.4;
+    content: "\e150"
+}
+.laravel-grid-table thead .laravel-grid-sort--asc:after {
+    content: "\e155"
+}
+.laravel-grid-table thead .laravel-grid-sort--desc:after {
+    content: "\e156"
+}
+.laravel-grid-table thead .laravel-grid-sort--asc-disabled:after,
+.laravel-grid-table thead .laravel-grid-sort--desc-disabled:after {
+    color: #eee
+}
+.laravel-grid-table.table-condensed>thead>tr>th {
+    padding-right: 20px
+}
+.laravel-grid-table.table-condensed .laravel-grid-sort:after,
+.laravel-grid-table.table-condensed .laravel-grid-sort--asc:after,
+.laravel-grid-table.table-condensed .laravel-grid-sort--desc:after {
+    top: 6px;
+    right: 6px
+}
+.laravel-grid-table.table-bordered {
+    border-collapse: separate !important
+}
+.laravel-grid-table.table-bordered th,
+.laravel-grid-table.table-bordered td {
+    border-left-width: 0
+}
+.laravel-grid-table.table-bordered th:last-child,
+.laravel-grid-table.table-bordered th:last-child,
+.laravel-grid-table.table-bordered td:last-child,
+.laravel-grid-table.table-bordered td:last-child {
+    border-right-width: 0
+}
+.laravel-grid-table.table-bordered tbody th,
+.laravel-grid-table.table-bordered tbody td {
+    border-bottom-width: 0
+}
+.laravel-grid-table>tbody>tr.laravel-grid-row--child {
+    padding: 0.5em 1em
+}
+.laravel-grid-table>tbody>tr.laravel-grid-row--child:hover {
+    background: transparent !important
+}
